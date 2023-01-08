@@ -8,20 +8,22 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: const [
+      children: [
         CustomIcon(
           icon: (Icons.list),
+          onTap: () {},
         ),
-        Spacer(),
-        Text(
+        const Spacer(),
+        const Text(
           'Keep Go',
           style: TextStyle(
             fontSize: 28,
           ),
         ),
-        Spacer(),
+        const Spacer(),
         CustomIcon(
           icon: (Icons.add),
+          onTap: () {},
         ),
       ],
     );
