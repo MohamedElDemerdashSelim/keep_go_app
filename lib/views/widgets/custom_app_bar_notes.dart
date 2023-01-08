@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:keep_go_app/views/library_view.dart';
 
 import 'custom_icon.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+class CustomAppBarnotes extends StatelessWidget {
+  const CustomAppBarnotes({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         CustomIcon(
+          onPressed: () {},
           icon: (Icons.list),
-          onTap: () {},
         ),
         const Spacer(),
         const Text(
@@ -22,8 +25,10 @@ class CustomAppBar extends StatelessWidget {
         ),
         const Spacer(),
         CustomIcon(
+          onPressed: () {
+            Navigator.pushNamed(context, LibraryView.id);
+          },
           icon: (Icons.add),
-          onTap: () {},
         ),
       ],
     );

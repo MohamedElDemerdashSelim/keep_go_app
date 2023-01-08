@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:keep_go_app/views/library_view.dart';
 
-import 'custom_app_bar.dart';
+import 'custom_app_bar_library.dart';
+import 'custom_app_bar_notes.dart';
 
 class LibraryViewBody extends StatelessWidget {
   const LibraryViewBody({super.key});
@@ -14,7 +16,7 @@ class LibraryViewBody extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          CustomAppBar(),
+          CustomAppBarlibrary(),
         ],
       ),
     );
